@@ -14,8 +14,6 @@ class ButtonLearn extends StatelessWidget {
           //onPressed null atanirsa, buton pasifleşir (bazilarinda renk gider, click sesi pasiflesir ..)
           TextButton(
             onPressed: () {},
-            child: Text("My Text Button",
-                style: Theme.of(context).textTheme.subtitle1),
             style: ButtonStyle(
               //butona basilmadiginda kirmi, basildiginda yesil yapar
               backgroundColor: MaterialStateProperty.resolveWith((states) {
@@ -24,6 +22,12 @@ class ButtonLearn extends StatelessWidget {
                 }
                 return Colors.red;
               }),
+            ),
+            child: Text(
+              "My Text Button",
+              style: Theme.of(context).textTheme.subtitle1?.copyWith(
+                color: Colors.black87
+              ),
             ),
           ),
 
@@ -50,7 +54,7 @@ class ButtonLearn extends StatelessWidget {
           Container(
             width: 100,
             height: 100,
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
             child: OutlinedButton(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
@@ -65,7 +69,7 @@ class ButtonLearn extends StatelessWidget {
           //iconlu butonlar yapmak icin kullaniriz, myButton.icon() -> (tum butonlarda var)
           OutlinedButton.icon(
             onPressed: () {},
-            icon: Icon(Icons.adb),
+            icon: const Icon(Icons.adb),
             label: const Text("iconlu buton"),
           ),
 
@@ -84,7 +88,7 @@ class ButtonLearn extends StatelessWidget {
             style: ElevatedButton.styleFrom(
               primary: Colors.brown,
               shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(15))),
+                  borderRadius: BorderRadius.all(Radius.circular(12))),
             ),
             child: Padding(
               padding: const EdgeInsets.only(

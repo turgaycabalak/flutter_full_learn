@@ -16,18 +16,18 @@ class AppBarLearnView extends StatelessWidget {
         //leading objesini sola sağa yanaştırır. sayı büyüdükçe sağa yanaşır
         // leadingWidth: 20,
 
-        //title yazısını ortaya alır
-        centerTitle: true,
+        //*** title yazısını ortaya alır
+        // centerTitle: false,
 
-        //appbar'ı transparan yapar
-        backgroundColor: Colors.transparent,
-        //hem transparan hem de elevation 0 yapılırsa body ve appbar aynı renk olur. birleşik gibi olur
-        elevation: 0,
+        //*** appbar'ı transparan yapar
+        // backgroundColor: Colors.transparent,
+        //*** hem transparan hem de elevation 0 yapılırsa body ve appbar aynı renk olur. birleşik gibi olur
+        // elevation: 0,
 
         //yukarda saatin oldugu status barının rengini ayarlar. mesela dark temalı uygulamada status bar yine de light yapılabilir
-        systemOverlayStyle: SystemUiOverlayStyle.light,
+        // systemOverlayStyle: SystemUiOverlayStyle.light,
 
-        //actions kısmındaki text'lere style verir
+        //actions kısmındaki text'lere style verir (a ve b)
         toolbarTextStyle: const TextStyle(color: Colors.yellow),
 
         //app barın solundaki back butonu otomatik olarak gelmesin
