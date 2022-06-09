@@ -25,9 +25,10 @@ class ButtonLearn extends StatelessWidget {
             ),
             child: Text(
               "My Text Button",
-              style: Theme.of(context).textTheme.subtitle1?.copyWith(
-                color: Colors.black87
-              ),
+              style: Theme.of(context)
+                  .textTheme
+                  .subtitle1
+                  ?.copyWith(color: Colors.black87),
             ),
           ),
 
@@ -87,6 +88,7 @@ class ButtonLearn extends StatelessWidget {
             onPressed: () {},
             style: ElevatedButton.styleFrom(
               primary: Colors.brown,
+              // Borders, CircleBorder(), RoundedRectangleBorder(), StadiumBorder()
               shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(12))),
             ),

@@ -38,7 +38,7 @@ class AppBarLearnView extends StatelessWidget {
           Shadow(color: Colors.white, offset: Offset(0.1, 1), blurRadius: 0.3)
         ]),
 
-        //app barın sağ tarafında bi menu/buton vs yapmamızı sağlar
+        ///////app barın sağ tarafında bi menu/buton vs yapmamızı sağlar
         actions: [
           IconButton(
             onPressed: () {},
